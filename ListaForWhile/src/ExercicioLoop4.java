@@ -6,12 +6,12 @@ public class ExercicioLoop4 {
         Scanner sc = new Scanner(System.in);
         int[] numeros = new int[10];
         for (int i = 0; i < 10; i++) {
-            System.out.println("Digite um número: ");
+            System.out.print("Digite um número: ");
             numeros[i] = sc.nextInt();
         }    
         for (int i = 0; i < numeros.length; i++) {
             if (numeros[i] % 3 == 0) {
-                System.out.println(numeros[i]);
+                System.out.print(numeros[i]);
             }
         }
         sc.close();

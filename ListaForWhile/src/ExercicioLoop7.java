@@ -7,20 +7,20 @@ public class ExercicioLoop7 {
         int[] numeros = new int[10];
         int first = numeros[0];
         int repeats = 0;
-        System.out.println("Digite um número: ");
+        System.out.print("Digite um número: ");
         first = sc.nextInt();
         for (int i = 1; i < 10; i++) {
-           System.out.println("Digite um número: ");
+           System.out.print("Digite um número: ");
             numeros[i] = sc.nextInt();
             if (numeros[i] == first){
                 repeats++;
             }
         }
         if (repeats >= 1) {
-            System.out.println("O elemento (" + first + ") se repete " + repeats + " vezes");
+            System.out.print("O elemento (" + first + ") se repete " + repeats + " vezes");
         }
         else {
-            System.out.println("O primeiro elemento não se repetiu.");
+            System.out.print("O primeiro elemento não se repetiu.");
         }
         sc.close();
     }

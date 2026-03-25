@@ -6,15 +6,15 @@ public class ExercicioLoop3 {
         Scanner sc = new Scanner(System.in);
         int[] numeros = new int[6];
         for (int i = 0; i < 6; i++) {
-            System.out.println("Digite um número: ");
+            System.out.print("Digite um número: ");
             numeros[i] = sc.nextInt();
         }    
         for (int i = 0; i < numeros.length; i++) {
             if (numeros[i] == 0) {
-                System.out.println("O número 0 existe no vetor");
+                System.out.print("O número 0 existe no vetor");
             }
             else{
-                System.out.println("O número 0 não existe no vetor");
+                System.out.print("O número 0 não existe no vetor");
             }
         }
         sc.close();

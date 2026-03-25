@@ -7,7 +7,7 @@ public class ExercicioLoop5 {
         int[] numeros = new int[5];
         boolean Positividade = true;
         for (int i = 0; i < 5; i++) {
-           System.out.println("Digite um número: ");
+           System.out.print("Digite um número: ");
             numeros[i] = sc.nextInt();
         }    
         for (int i = 0; i < numeros.length; i++) {
@@ -17,10 +17,10 @@ public class ExercicioLoop5 {
             }          
         }      
         if (Positividade) {
-            System.out.println("Todos os números são positivos!");
+            System.out.print("Todos os números são positivos!");
         }
         else {
-            System.out.println("Há um número negativo");
+            System.out.print("Há um número negativo");
         }
         sc.close();
     }
