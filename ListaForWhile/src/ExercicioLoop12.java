@@ -7,20 +7,30 @@ public class ExercicioLoop12 {
         int[] numeros = new int[10];
         int[] pares = new int[10];
         int[] impares = new int[10];
-        int a = 0;
-        int b = 0;
+        int contaPar = 0;
+        int contaImpar = 0;
 
         for (int i = 0; i < 10; i++) {
             System.out.print("Digite um número: ");
             numeros[i] = sc.nextInt();
             if (numeros[i] % 2 == 0){
-                pares[a] = numeros[i];
-                a++;
+                pares[contaPar] = numeros[i];
+                contaPar++;
             } else {
-                impares[b] = numeros[i];
-                b++;
+                impares[contaImpar] = numeros[i];
+                contaImpar++;
             }
         }
+
+        for (int i = 0; i < contaPar; i++) {
+            numeros[i] = pares[i];
+        }
+        for (int i = 0; i < contaImpar; i++) {
+        numeros[contaPar + i] = impares[i];
+        }
         sc.close();
+        for (int i = 0; i < numeros.length; i++) {
+        System.out.print(numeros[i] + " ");
+        }
     }
 }
