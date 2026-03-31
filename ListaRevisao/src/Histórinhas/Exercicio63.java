@@ -1,4 +1,7 @@
 package Histórinhas;
+
+import java.util.Scanner;
+
 public class Exercicio63 {
 //Sistema de Lâmpadas no Hotel
 // O quarto possui dois interruptores:
@@ -20,5 +23,30 @@ public class Exercicio63 {
 // Na segunda linha, imprima:
 // 1 se a lâmpada B estiver acesa
 // 0 se estiver apagada
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Quantas vezes o Interruptor foi apertado?: ");
+        int apertosInt = sc.nextInt(); 
+        int[] numeroApertos = new int[apertosInt];
+        boolean lampA = false;
+        boolean lampB = false;
+        for (int i = 0; i < numeroApertos.length; i++){
+            System.out.println("Qual Interruptor apertar? (1 pra I1, 2 pra I2): ");
+            numeroApertos[i] = sc.nextInt();
+            if (numeroApertos[i] == 1) {
+                lampA = !lampA;
+            }
+            else if (numeroApertos[i] == 2) {
+                lampA = !lampA;
+                lampB = !lampB;
+            }
+            else {
+                System.out.println("número inválido!");
+            }
+        }
+        sc.close();
+        System.out.println("Resultado:");
+        System.out.println(lampA ? 1 : 0);
+        System.out.println(lampB ? 1 : 0);
+    }
 }
