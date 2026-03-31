@@ -1,23 +1,21 @@
 package Medios;
+
 import java.util.Arrays;
 import java.util.Scanner;
-public class Exercicio36 {
-    //Leia um vetor e remova duplicados.
+
+public class Exercicio39 {
+    //Leia 10 números e substitua os pares por -1.
         public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] numeros = new int[5];
-        for (int i = 0; i < 5; i++) {
+        int[] numeros = new int[10];
+        for (int i = 0; i < numeros.length; i++) {
             System.out.print("Digite um número: ");
             numeros[i] = sc.nextInt();   
-        }
-        for (int i = 0; i < 5; i++) {
-            for (int j = i + 1; j < 5; j++) {
-            if (numeros[i] == numeros[j]) {
-                numeros[j] = 0;
-                }
+            if (numeros[i] % 2 == 0){
+                numeros[i] = -1;
             }
         }
         System.out.println(Arrays.toString(numeros));
         sc.close();
-    }    
+    }
 }
