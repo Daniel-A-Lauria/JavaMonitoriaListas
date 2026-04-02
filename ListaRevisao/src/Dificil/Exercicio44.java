@@ -4,9 +4,9 @@ public class Exercicio44 {
     //Leia uma matriz e calcule a soma das diagonais.
         public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);        
-        System.out.println("Digite a 'altura': ");
+        System.out.print("Digite a 'altura': ");
         int x = sc.nextInt();
-        System.out.println("Digite a 'largura': ");
+        System.out.print("Digite a 'largura': ");
         int y = sc.nextInt();
         int[][] matriz = new int[x][y];
         for (int i = 0; i < matriz.length; i++) {
